@@ -1,0 +1,151 @@
+.cart-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.big-input {
+  height: 65px !important;
+  font-size: 18px;
+  border-radius: 12px;
+}
+
+.form-floating label {
+  padding-left: 14px;
+}
+
+.form-floating .form-control {
+  border: 1px solid #cbd5e1;
+  background: #f8fafc;
+}
+
+.buy-section {
+  width: 100%;
+}
+
+
+.form-floating .form-control:focus {
+  box-shadow: none;
+  border-color: #2563eb;
+}
+
+.cart-card {
+  background: linear-gradient(145deg, #2e1065, #4c1d95);
+  border-radius: 16px;
+  height: 180px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.cart-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.4);
+}
+
+
+.cart-card .alphabet {
+  font-size: 90px;
+  font-weight: 500;
+  color: #e2e8f0;
+  letter-spacing: 4px;
+  text-shadow: 0 5px 12px rgba(0,0,0,0.4);
+}
+
+
+.cart-cards-grid h1 {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: #94a3b8;
+  font-weight: 500;
+  margin-top: 40px;
+}
+.empty-cart {
+  width: 100%;
+  min-height: 300px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  padding: 60px 20px;
+
+  /* light background */
+  background: #f1f5f9;
+
+  border-radius: 14px;
+  margin: 0px 0px;
+
+  box-sizing: border-box;
+}
+
+.buy-btn {
+  height: 65px;
+  width: 100%;
+
+  border: none;
+  border-radius: 12px;
+
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+
+  box-shadow: 0 8px 20px rgba(37,99,235,0.35);
+  transition: all 0.3s ease;
+}
+
+.buy-btn:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #1d4ed8, #1e40af);
+}
+
+.buy-btn:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+
+/* BUY SECTION ALIGNMENT */
+.buy-section {
+  width: 100%;
+}
+
+.buy-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 12px;
+  width: 100%;
+}
+
+/* full width children */
+.buy-input,
+.buy-button {
+  width: 100%;
+}
+
+
+.empty-cart h2 {
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+
+.empty-cart p {
+  color: #475569;
+}
+
+.empty-icon {
+  font-size: 60px;
+  margin-bottom: 15px;
+}

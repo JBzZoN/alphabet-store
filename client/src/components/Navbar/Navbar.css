@@ -39,7 +39,7 @@
   white-space: nowrap;
 }
 
-/* ===== Responsive Behavior ===== */
+/* Responsive Behavior */
 @media (max-width: 768px) {
   .sidebar {
     width: 70px;
@@ -58,4 +58,8 @@
   text-decoration: none; /* removes underline */
   color: inherit;        /* keeps parent text color */
   display: block;
+}
+
+.badge {
+  margin-left: auto;
 }

@@ -1,3 +1,15 @@
+use railway;
+
+CREATE TABLE alphabets (
+    alphabet_id BIGINT NOT NULL AUTO_INCREMENT,
+    own_count INT,
+    created_on DATETIME(6),
+    updated_on DATETIME(6),
+    alphabet VARCHAR(255),
+    owner_name VARCHAR(255),
+    PRIMARY KEY (alphabet_id)
+);
+
 INSERT INTO alphabets (alphabet, created_on, updated_on) VALUES
 ('A', NOW(), NOW()),
 ('B', NOW(), NOW()),
@@ -25,3 +37,4 @@ INSERT INTO alphabets (alphabet, created_on, updated_on) VALUES
 ('X', NOW(), NOW()),
 ('Y', NOW(), NOW()),
 ('Z', NOW(), NOW());
+

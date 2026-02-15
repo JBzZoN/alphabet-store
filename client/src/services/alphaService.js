@@ -1,8 +1,12 @@
 import axios from 'axios'
 
 const api = axios.create({
-    baseURL: "http://192.168.0.101:8080/alpha"
+    baseURL: "http://localhost:8080/alpha"
 })
+
+export const buyAlphas = async (ids, name) => {
+    const response = await api.patch("/buy", {ids, name})
+}
 
 export const getAll = async () => {
     const response = await api.get("/all");

@@ -3,10 +3,18 @@ import { getAll } from '../../services/alphaService'
 import './Dashboard.css'
 import Title from '../../components/Title/Title'
 import {toast} from 'react-toastify'
+import { useDispatch, useSelector } from 'react-redux'
+import { addToCart } from '../../slices/cart'
 
 function Dashboard() {
 
     const [data, setData] = useState(null)
+
+    const dispatcher = useDispatch()
+
+    const cart = useSelector(store => store.cart)
+    console.log(cart)
+
 
     useEffect(() => {
         async function getData() {
@@ -15,10 +23,6 @@ function Dashboard() {
         }
         getData()
     },[])
-
-    const onAddToCart = () => {
-        toast.success("Added to cart")
-    }
 
     return (
         <div>
@@ -33,13 +37,15 @@ function Dashboard() {
                         <span className="alphabet">{item.alphabet}</span>
                     </div>
 
-                    <h3 className="owners-title">Owners</h3>
+                    <h3 className="owners-title">Owner</h3>
 
                     <div className="owners">
-                        {item.ownerName == null? "None": item.ownerName}
+                        {item.ownerName === null? "None": item.ownerName}
                     </div>
 
-                    <button className="cart-btn" onClick={onAddToCart}>Add To Cart</button>
+                    <button className={"cart-btn" + (cart.some(c => c.id == item.id) ? "-red" : "")} onClick={() => {
+                        dispatcher(addToCart(item))
+                    }}>{cart.some(c => c.id == item.id) ? "Remove From Cart" : "Add To Cart"}</button>
 
                     </div>
                 ))
