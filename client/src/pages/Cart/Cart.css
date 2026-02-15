@@ -12,6 +12,59 @@
   border-radius: 12px;
 }
 
+@media (max-width: 768px) {
+
+  /* smaller grid cards */
+  .cart-cards-grid {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 12px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  /* smaller card height */
+  .cart-card {
+    height: 110px !important;
+    border-radius: 10px;
+  }
+
+  /* smaller alphabets */
+  .cart-card .alphabet {
+    font-size: 50px;
+    letter-spacing: 2px;
+  }
+
+  /* smaller floating input */
+  .big-input {
+    height: 50px !important;
+    font-size: 14px;
+  }
+
+  /* smaller buy button */
+  .buy-btn {
+    height: 57px !important;
+    font-size: 10px !important;
+    border-radius: 10px;
+  }
+
+  /* stack input + button vertically on mobile */
+  .buy-row {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  /* reduce empty cart spacing */
+  .empty-cart {
+    min-height: 220px;
+    padding: 30px 10px;
+  }
+
+  .empty-icon {
+    font-size: 40px;
+  }
+
+}
+
 .form-floating label {
   padding-left: 14px;
 }

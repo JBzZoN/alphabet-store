@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const api = axios.create({
-    baseURL: "http://localhost:8080/alpha"
+    baseURL: "https://alphabet-store-backend.onrender.com/alpha"
 })
 
 export const buyAlphas = async (ids, name) => {

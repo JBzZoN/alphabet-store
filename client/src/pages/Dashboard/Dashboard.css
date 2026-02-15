@@ -8,6 +8,47 @@
 }
 
 
+@media (max-width: 768px) {
+  .cards-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 12px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .alphabet {
+    font-size: 45px !important;
+  }
+
+  .card {
+    padding: 10px;
+    border-radius: 12px;
+  }
+
+  .alphabet-box {
+    height: 60px !important;
+    margin-bottom: 8px;
+    border-radius: 10px;
+  }
+
+  .owners-title {
+    font-size: 14px;
+    margin: 3px 0;
+  }
+
+  .owners p {
+    font-size: 11px;
+    margin: 2px 0;
+  }
+
+  .cart-btn,
+  .cart-btn-red {
+    font-size: 12px;
+    border-radius: 8px;
+  }
+}
+
+
 .card {
   background: linear-gradient(145deg, #0f172a, #1e293b);
   border-radius: 18px;
