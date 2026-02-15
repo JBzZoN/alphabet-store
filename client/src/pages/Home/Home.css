@@ -1,0 +1,18 @@
+.layout {
+  display: flex;
+}
+
+/* content area */
+.main-content {
+  margin-left: 220px;   /* same as sidebar width */
+  padding: 20px;
+  width: calc(100% - 220px);
+}
+
+/* responsive version */
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 70px;   /* collapsed sidebar width */
+    width: calc(100% - 70px);
+  }
+}

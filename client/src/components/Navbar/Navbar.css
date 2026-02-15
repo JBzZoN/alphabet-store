@@ -1,0 +1,61 @@
+/* Sidebar container */
+.sidebar {
+  width: 220px;
+  height: 100vh;
+  background-color: #111827;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  transition: width 0.3s ease;
+}
+
+/* Navbar items */
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.nav-item:hover {
+  background-color: #1f2937;
+}
+
+/* Icons */
+.icon {
+  font-size: 20px;
+  min-width: 20px;
+}
+
+/* Text */
+.text {
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+/* ===== Responsive Behavior ===== */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 70px;
+  }
+
+  .text {
+    display: none;
+  }
+
+  .nav-item {
+    justify-content: center;
+  }
+}
+
+.nav-link {
+  text-decoration: none; /* removes underline */
+  color: inherit;        /* keeps parent text color */
+  display: block;
+}

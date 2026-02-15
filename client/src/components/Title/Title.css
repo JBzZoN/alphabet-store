@@ -1,0 +1,29 @@
+.logo-card {
+  width: 100%;
+  padding: 20px;
+  border-radius: 16px;
+  background: #111827;
+  color: white;
+  text-align: center;
+
+  /* modern UI effects */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease;
+}
+
+/* first line */
+.logo-card h1 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+/* second line */
+.logo-card p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #9ca3af;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
