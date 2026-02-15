@@ -45,7 +45,7 @@ function Dashboard() {
 
                     <button className={"cart-btn" + (cart.some(c => c.id == item.id) ? "-red" : "")} onClick={() => {
                         dispatcher(addToCart(item))
-                    }}>{cart.some(c => c.id == item.id) ? "Remove From Cart" : "Add To Cart"}</button>
+                    }}>{cart.some(c => c.id == item.id) ? "Remove" : "Add"}</button>
 
                     </div>
                 ))
